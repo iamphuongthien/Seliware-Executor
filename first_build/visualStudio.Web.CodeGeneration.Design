@@ -1,0 +1,25 @@
+  復元対象のプロジェクトを決定しています...
+  Writing C:\Users\tnguyen86\AppData\Local\Temp\tmp6EF9.tmp
+info : パッケージ 'Microsoft' の PackageReference をプロジェクト 'G:\source_webAPI\first_build\first_build.csproj' に追加しています。
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft/index.json
+info :   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft/index.json 1367 ミリ秒
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft/index.json
+info :   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft/index.json 413 ミリ秒
+error: パッケージ 'Microsoft' に使用できるバージョンがありません。
+
+
+Usage: NuGet.CommandLine.XPlat.dll package add [options]
+
+Options:
+  -h|--help               Show help information
+  --force-english-output  アプリケーションで、英語ベースのインバリアント カルチャを使用して実行するようにします。
+  --package               追加されるパッケージの ID。
+  --version               追加されるパッケージのバージョン。
+  -d|--dg-file            プレビューと互換性チェックの復元に使用される、依存関係グラフ ファイルへのパス。
+  -p|--project            プロジェクト ファイルへのパス。
+  -f|--framework          パッケージ参照が追加される必要のあるフレームワーク。
+  -n|--no-restore         復元のプレビューと互換性チェックを実行しません。追加されたパッケージ参照の条件は解除されます。
+  -s|--source             復元中に使用する複数の NuGet パッケージ ソースを指定します。
+  --package-directory     パッケージを復元するディレクトリです。
+  --interactive           コマンドが、認証などの操作の手動アクションをブロックおよび要求することを許可します。
+  --prerelease            プレリリース パッケージのインストールを許可します。

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>To-do CRUD</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <h1>SCHOOL ENROLLMENT</h1>
+    <h3>Add</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <label>LastName</label>
+        <input type="text" id="add-lastname">
+        <br>
+
+        <label>FirstMidName</label>
+        <input type="text" id="add-firstmidname">
+        <br>
+
+        <label>EnrollmentDate</label>
+        <input type="date" id="add-enrollmentdate">
+        <br>
+        <input type="submit" value="Add">
+    </form>
+
+    <div id="editForm">
+        <h3>Edit</h3>
+        <form action="javascript:void(0);" onsubmit="updateItem()">
+            <input type="hidden" id="edit-id">
+
+            <label>LastName</label>
+            <input type="text" id="edit-lastname">
+            <br>
+
+            <label>FirstMidName</label>
+            <input type="text" id="edit-firstmidname">
+            <br>
+
+            <label>EnrollmentDate</label>
+            <input type="date" id="edit-enrollmentdate">
+            <br>
+
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>LastName</th>
+            <th>FirstMidName</th>
+            <th>EnrollmentDate</th>
+        </tr>
+        <tbody id="todos"></tbody>
+    </table>
+
+    <script src="js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getItems();
+    </script>
+</body>
+</html>
